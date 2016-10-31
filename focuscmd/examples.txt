@@ -1,0 +1,4 @@
+twitter.com
+facebook.com
+news.ycombinator.com
+slack.com
