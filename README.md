@@ -11,9 +11,12 @@ This has the effect of blocking your access to the sites unless you go to the ef
 - The hosts file is system wide so obviously this will only be suitable for a system that other people arn't trying to use.
 
 
-## Getting
+## Installation
 
 Currently FocusFocus has a simple command line util in the focuscmd directory (todo: add gui/web page access)
+```
+$ go get -u github.com/jdustin/focusfocus
+```
 
 ##Usage
 
@@ -21,9 +24,10 @@ Currently FocusFocus has a simple command line util in the focuscmd directory (t
 
 To Focus and waste less time:
 Add site domain names to be restricted into a text file, one site per line and run focuscmd with the focus parameter e.g.
-
-focuscmd focus sitestolimit.txt
-
+```
+$ focuscmd focus sitestolimit.txt
+```
 To Relax, remove any sites added by FocusFocus, run focuscmd with the relax param. e.g.
-
-focuscmd relax
+```
+$ focuscmd relax
+```
