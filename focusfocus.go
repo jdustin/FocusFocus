@@ -92,7 +92,9 @@ func (hf *Hostfile) RemoveFocusLines() (bool, error) {
 	// problem. the start line was found but not the end marker.
 	// don't proceed and raise an error
 	if !endFound {
-		return false, fmt.Errorf("Invalid file contents. Start of focusfocus lines found (at line %d but the end marker was not found. The hosts file may need manually edited")
+		return false, fmt.Errorf(
+			"Invalid file contents. Start of focusfocus lines found (at line %d but the end marker was not found. The hosts file may need manually edited",
+			startPos)
 	}
 	newlines := make([]string, len(hf.lines)-(endPos-startPos+1))
 	j := 0
