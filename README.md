@@ -17,8 +17,8 @@ Currently FocusFocus has a simple command line util in the focuscmd directory (t
 ```
 $ go get -u github.com/jdustin/focusfocus
 ```
-
-##Usage
+ 
+## Usage
 
 (with sudo or a windows cmd with admin access)
 
